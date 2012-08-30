@@ -18,7 +18,7 @@ namespace :sources do
         p.source_post_details = post['message']
         p.source_post_type = post['type']
         p.source_post_link = post['link']
-        p.save ? counter + 1 : counter
+        p.save ? counter + 1 : counter   
       end
     end
     File.open('facebook_polling_log.txt', 'a+') { |f| f.puts "Polled at #{Time.now}; added #{posts_added} posts." }

@@ -8,4 +8,4 @@
 
 User.destroy_all
 
-User.create email: 'r@r.com', facebook_access_token: 'AAACEdEose0cBAPKFFTYWKn1JWRBrNPLt5sEdicARtvo3Q2GaAZAT3n24yalAwLSYhEE5PZCS8rZCZBZAGzqmxLZAYeYRd2FvKAOB4abavjawZDZD'
+User.create email: 'r@r.com', facebook_access_token: ENV['FACEBOOK_ACCESS_TOKEN']
